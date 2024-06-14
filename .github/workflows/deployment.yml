@@ -14,11 +14,12 @@ on:
         
 jobs:
 
-  build:
+  build-push:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         
       - name: Docker meta
         id: docker_meta
@@ -42,7 +43,7 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GHCR_PASSWORD }}
           
-      - name: Build image
+      - name: Build and push image
         uses: docker/build-push-action@v5
         with:
           push: true
