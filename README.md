@@ -12,4 +12,4 @@ In this repository there are two workflows:
 
 2. Deployment workflow (deployment.yml) is happening after the push command on master branch.
    - Through Docker metadata action image version is set up.
-   - For image deployment Github Container Registry is used.
+   - For image deployment Github Container Registry is used: `ghcr.io/tamaramarkovic/intens`
