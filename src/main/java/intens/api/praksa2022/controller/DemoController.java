@@ -11,4 +11,10 @@ public class DemoController {
 
         return ResponseEntity.ok().body("Intens Praksa 2022!");
     }
+    
+    @RequestMapping("/test")
+    public ResponseEntity<String> testDemo() {
+
+        return ResponseEntity.ok().body("Test");
+    }
 }
