@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class Praksa2022ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() throws Exception {
+		throw new Exception("Fail");
 	}
 
 }
